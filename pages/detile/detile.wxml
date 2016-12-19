@@ -1,0 +1,31 @@
+<view class="main">
+
+<swiper class="kuai" current="{{currentpage}}" bindchange="binditemchange">
+    <block wx:for="{{menuitem}}" wx:key="item" >
+    <swiper-item>
+      <text class="{{item.currentpage==selected ? selected :''}}">{{menuitem.text}}</text>
+    </swiper-item>
+    </block>
+</swiper>
+
+  <view class="main-item">
+  <image src="../../images/shouye.png" />
+ 
+  <text class="main-text">骚胖模式</text>
+
+  <view class="saopang">
+  <switch type="switch" bindchange="sunsaop" class="switch"/>
+    </view>
+  </view>
+
+
+  <view class="main-item">
+  <image src="../../images/shouye.png" />
+ 
+  <text class="main-text">骚胖模式</text>
+
+  <view class="saopang">
+  <switch type="switch" bindchange="sunsaop" class="switch"/>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,36 @@
+{
+  "pages":[
+
+  
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detile/detile",
+    "pages/movice/movice",
+    "pages/moviedetile/moviedetile",
+      "pages/swiper/swiper"
+  ],
+  "window":{
+  
+    "backgroundColor": "#f0f0f0",
+    "navigationBarBackgroundColor": "#f0f0f0",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+"tabBar": {
+  "color": "#000000",
+  "selectedColor": "#f60",
+  "list": [{
+    "pagePath": "pages/index/index",
+    "text": "marks",
+    "iconPath": "images/shouye.png",
+    "selectedIconPath": "images/shouye.png"
+  },{
+    "pagePath":"pages/logs/logs",
+    "text":"moon",
+    "iconPath":"images/wuliu.png",
+    "selectedIconPath":"images/wuliu.png"
+  }]
+}
+
+  
+}

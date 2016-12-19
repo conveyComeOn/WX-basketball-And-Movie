@@ -1,0 +1,22 @@
+
+
+<view class="main">
+    <view class="top">
+        <block wx:for="{{menuitem}}" wx:key="item">
+            <view class="nav {{currentMenuID==item.currentpage? 'selected':''}}" bindtap="bindchange" id="{{item.currentpage}}">
+              <text>{{item.text}}</text>
+            </view>
+        </block>
+    </view>
+
+    <swiper class="swiper" interval="{{interval}}" duration="{{duration}}" current="{{now}}" bindchange="move">
+    <block wx:for="{{pages}}" wx:key="item">
+    <swiper-item>
+    <view class="content">
+     <text>{{item.text}}</text>
+    </view>
+    </swiper-item>
+    </block>
+    </swiper>
+
+</view>

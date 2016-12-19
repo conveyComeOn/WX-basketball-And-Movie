@@ -1,0 +1,27 @@
+
+<view class="main">
+<block wx:for="{{movie}}" wx:key="item">
+<navigator url="../moviedetile/moviedetile">
+ <view class="cell" bindtap="cellclick">
+  <view class="left">
+  <image src="{{item.img}}"></image>
+  </view>
+  <view class="cell-text">
+  <text class="text-nm">{{item.nm}}</text>
+  <text class="text-sc">观众评分{{item.sc}}分</text>
+  <text class="text-city">{{item.scm}}</text>
+  <text class="text-jia">{{item.showInfo}}</text>
+  
+   </view>
+   <view class="buyticket">购票</view>
+  </view>
+  </navigator>
+  </block>
+ 
+ 
+  <text class="showmore" bindtap="showmore" style="hidden">
+   加载更多
+  </text>
+ 
+
+</view>

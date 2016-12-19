@@ -1,0 +1,31 @@
+<!--logs.wxml-->
+<!--<swiper class="swiper" indicator-dots="{{indicator}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
+<block class="block" wx:for-item="{{images}}">
+<swiper-item class="swiper-item">
+<image src="{{item}}"></image>
+</swiper-item>
+</block>
+</swiper>-->
+
+
+<scroll-view class="scroll-view">
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="block">
+  <block wx:for="{{images}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"  />
+    </swiper-item>
+  </block>
+</swiper>
+
+<navigator url="../detile/detile">
+<view class="item" wx:for="{{NBA}}" wx:key="NBA">
+<image src="{{item.url}}" class="poster"/>
+<view class="meta">
+<text class="title">{{item.text}}</text>
+<text class="sub-title">{{item.subtext}}</text>
+</view>
+</view>
+</navigator>
+</scroll-view>

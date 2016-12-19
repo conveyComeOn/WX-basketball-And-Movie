@@ -1,0 +1,21 @@
+
+<!--
+<include src="../movice/movice.wxss"></include>-->
+
+<view class="main">
+<navigator url="../swiper/swiper">
+  <view class="cell">
+  <view class="left">
+  <image src="{{movie.img}}"></image>
+  </view>
+  <view class="cell-text">
+  <text class="text-nm">{{movie.nm}}</text>
+  <text class="text-sc">观众评分{{movie.sc}}分</text>
+  <text class="text-city">{{movie.scm}}</text>
+ </view>
+ </view>
+ </navigator>
+
+  
+
+</view>

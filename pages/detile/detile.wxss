@@ -1,0 +1,25 @@
+.main{
+background-color: #fff;
+}
+.main-item{
+margin: 10rpx;
+ border-bottom: 1px solid rebeccapurple;
+height: 70rpx;
+ 
+  font-size: 32rpx;
+}
+.main-item image{
+    width: 40rpx;
+    height: 40rpx;
+
+}
+.main-text{
+    margin: 10rpx;
+ 
+}
+.saopang{
+  
+
+    float: right;
+}
+
